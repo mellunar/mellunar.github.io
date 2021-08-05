@@ -302,6 +302,36 @@ footer a:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
+#biografia {
+    padding-top: 6%;
+    padding-bottom: 2%;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+#biografia h2 {
+    text-align: center;
+}
+
+#bioimg {
+    background: url(https://live.staticflickr.com/65535/51360455334_380c61d582_o.png);
+    background-size: 370px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 370px;
+    height: 260px;
+    margin: auto;
+}
+
+#biocon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 1023px) {
     #welcome {
         padding-bottom: 47%;
@@ -320,8 +350,12 @@ footer a:hover {
         padding-top: 4%;
     }
 
-    #projetos {
+    #projetos, #biografia {
         padding-bottom: 4%;
+    }
+
+    #biografia {
+        padding-top: 10%;
     }
 
     /*mobmenu*/
@@ -386,7 +420,8 @@ footer a:hover {
     #welcome {
         line-height: 18px;
         padding-top: 23%;
-        padding-bottom: 75%;
+        padding-bottom: 57%;
+        background-size: 380px auto;
     }
 
     #std {
@@ -417,5 +452,9 @@ footer a:hover {
 
     #empty {
         height: 400px;
+    }
+
+    #biografia {
+        padding-top: 15%;
     }
 }
