@@ -13,8 +13,9 @@ window.addEventListener("load", function(){
     window.toggleDark = function toggleDark() {
       document.body.classList.toggle("darkbody");
       document.getElementById("header").classList.toggle("darkheader");
-      document.getElementById("welcome").classList.toggle("darkwelcome");
       document.getElementsByClassName("tbbg")[0].classList.toggle("darktbbg");
       document.getElementById("footer").classList.toggle("darkfooter");
+      var welcome = document.getElementById("welcome")
+      welcome != null ? welcome.classList.toggle("darkwelcome") : void(0);
     }
 });
