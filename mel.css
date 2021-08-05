@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #1d1d1d;
+}
+
+.green {
+    color: #2ea675;
+}
+
+a {
+    text-decoration: none;
+    color: #2ea675;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 56px;
+    margin-left: -3px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+header a {
+    color: #1d1d1d;
+}
+
+#logo {
+    font-family: 'Crimson Text', serif;
+    padding: 1rem;
+}
+
+#mobmenu {
+    display: none;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#topbar {
+    display: block;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    margin-top: 0;
+    z-index: 999;
+}
+
+.tbbg {
+    background-color: rgba(0,0,0,0.9);
+}
+
+#topbar a {
+    color: #fff;
+}
+
+#topbar a:hover, header a:hover {
+    color: #2ea675;
+    text-decoration: none;
+}
+
+#tbc {
+    height: 65px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#topnav {
+    margin-left: auto;
+    font-size: 15px;
+}
+
+#topnav, #projs ul {
+    list-style: none;
+}
+
+#topnav li {    
+    display: inline-block;
+    padding: 1rem;
+}
+
+#daynight {
+    background-color: #2ea675;
+    background-position: center;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 1rem;
+}
+
+#daynight:hover {
+    background-color: #fff;
+    color: #1d1d1d;
+}
+
+#daynight:active {
+    border: 3px solid #2ea675;
+}
+
+#welcome {
+    margin: auto;
+    padding: 15% 1rem 10% 1rem;
+    line-height: 1.6em;
+    max-width: 1200px;
+    background: url(https://live.staticflickr.com/65535/51358685869_7a7453ae9c_o.png);
+    background-size: 500px auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#welc {
+    max-width: 33em;
+}
+
+#std {
+    margin-top: -20px;
+}
+
+#redes {
+    margin-top: 3em;
+    font-size: 25px;
+    letter-spacing: 0.8rem;
+    text-align: center;
+}
+
+.section {
+    padding-top: 2.5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#minibio {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+}
+
+#biot {
+    grid-area: 1/1/2/3;
+    text-align: center;
+}
+
+#profpic {
+    background: url(https://live.staticflickr.com/65535/51349705852_7df4bd604b_o.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#linguagens {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+#lh2 {
+    display: none;
+}
+
+#langs {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}.lic{
+    font-size: 40px;
+}
+.grad {
+    font-size: 12px;    
+    letter-spacing: 2px;
+}
+
+#projetos {
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+#empty {    
+    height: 350px;
+    background: url(https://live.staticflickr.com/65535/51359624779_518665d083_o.png);
+    background-size: auto 275px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.textcenter {
+    text-align: center;
+}
+.textjustify {
+    text-align: justify;
+}
+.ppp {
+    margin-top: 1rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #e2e8f0;
+    width: 100%;
+    height: 80px;
+    color: #868686;
+}
+footer a {
+    color: #6c7882;
+    font-size: 25px;
+    letter-spacing: 0.8rem;
+}
+footer a:hover {
+    color: #2ea675;
+}
+
+#ifooter {
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#flogo {
+    font-family: 'Crimson Text', serif;
+    padding: 1rem;
+}
+
+#footer-links {
+    margin-left: auto;
+}
+
+.darkbody {
+    color: #fff;    
+    background-color: #17161b;
+}
+.darkheader {
+    background-color: #1a191e;
+}
+.darkheader a {
+    color: #fff;
+}
+.darkfooter {
+    background-color: #1a191e;
+    border-top: 1px solid #292c36;
+}
+.darkfooter a {
+    color: #515760;
+}
+.darktbbg {
+    background-color: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1023px) {
+    #welcome {
+        padding-bottom: 47%;
+        background-position: center bottom;
+    }
+
+    #welc {
+        max-width: 100%;
+    }
+
+    #redes {
+        margin-top: 15px;
+    }
+
+    .section {
+        padding-top: 4%;
+    }
+
+    #projetos {
+        padding-bottom: 4%;
+    }
+
+    /*mobmenu*/
+
+    #logo {
+        padding: 0.79rem;
+    }
+
+    #topbar {
+        height: 50px;
+    }
+
+    #tbc {
+        display: block;
+        height: 50px;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    #mobmenu {
+        display: flex;
+        font-size: 20px;        
+        padding: 0.7rem;
+    }
+
+    #moblinks {
+        display: none;
+    }
+
+    #topnav ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        background-color: #000;
+    }
+
+    #daynight {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0.65rem;
+    }
+}
+@media screen and (max-width: 599px) {
+    h1, h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 19px;
+    }    
+
+    #welcome {
+        line-height: 15px;
+        padding-bottom: 75%;
+    }
+
+    #std {
+        margin-top: -10px;
+    }
+
+    #minibio {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto;
+    }
+
+    #biot {
+        grid-area: 1/1/2/2;
+    }
+
+    #linguagens {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: auto;
+    }
+
+    #lh2 {
+        display: block;
+    }
+
+    #lh3 {
+        display: none;
+    }
+
+    #empty {
+        height: 400px;
+    }
+}
