@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let cpg = document.location.href.substring(document.location.href.lastIndexOf("/")+1, document.location.href.length);
-    //cpg == "index.html" ? alert("OK") : void(0);
     window.mobilemenu = function mobilemenu() {
       let o = document.getElementById("moblinks");
       o.style.display === "flex" ? o.style.display = "none" : o.style.display = "flex"
@@ -22,12 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //nav selected
-    if (cpg == "biografia") {
+    let pgptf = document.getElementById("portfolio");
+    let pgbio = document.getElementById("biografia");
+    if (pgbio != null) {
       let libio = document.getElementById("li-bio")
       libio.innerHTML = "Biografia";
       libio.classList.toggle("green")
     }
-    if (cpg == "mellunar.github.io/portfolio") {
+    if (pgptf != null) {
       let liptf = document.getElementById("li-ptf")
       liptf.innerHTML = "Portfolio";
       liptf.classList.toggle("green")
