@@ -224,16 +224,18 @@ header a {
     padding-bottom: 2%;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 20px;
 }
 
 #empty {    
-    height: 350px;
+    height: 275px;
+    width: 282px;
     background: url(https://live.staticflickr.com/65535/51359624779_518665d083_o.png);
     background-size: auto 275px;
     background-repeat: no-repeat;
     background-position: center bottom;
+    margin: auto;
 }
 
 .textcenter {
@@ -313,7 +315,7 @@ footer a:hover {
     grid-gap: 20px;
 }
 
-#biografia h2 {
+#biografia h2, #portfolio h2 {
     text-align: center;
 }
 
@@ -330,6 +332,47 @@ footer a:hover {
 #biocon {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#portfolio {    
+    padding: 6% 20px 2% 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+.portsec {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.portsec li {
+    height: 400px;
+    border-radius: 7px;
+    border: 1px solid #dee2e6;
+}
+.portsec li:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);    
+    border: 3px solid #2ea675;
+}
+
+.plico {
+    font-size: 25px;    
+    letter-spacing: 10px;
+    margin-bottom: 0.5rem;
+}
+
+#minis {    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -354,7 +397,7 @@ footer a:hover {
         padding-bottom: 4%;
     }
 
-    #biografia {
+    #biografia, #porfolio {
         padding-top: 10%;
     }
 
@@ -438,7 +481,7 @@ footer a:hover {
     }
 
     #linguagens {
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         grid-template-columns: auto;
     }
 
@@ -450,11 +493,7 @@ footer a:hover {
         display: none;
     }
 
-    #empty {
-        height: 400px;
-    }
-
-    #biografia {
+    #biografia, #portfolio {
         padding-top: 15%;
     }
 }
