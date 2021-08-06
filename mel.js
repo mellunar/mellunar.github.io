@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //nav selected
-    if (cpg == "biografia.html") {
+    if (cpg == "biografia") {
       let libio = document.getElementById("li-bio")
       libio.innerHTML = "Biografia";
       libio.classList.toggle("green")
     }
-    if (cpg == "portfolio.html") {
+    if (cpg == "portfolio") {
       let liptf = document.getElementById("li-ptf")
       liptf.innerHTML = "Portfolio";
       liptf.classList.toggle("green")
