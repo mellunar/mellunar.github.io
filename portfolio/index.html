@@ -19,19 +19,7 @@
 </head>
 <body>
     <header id="header">
-        <nav id="topbar" class="tbbg">
-            <div id="tbc">
-                <div id="logo"><a href="https://mellunar.github.io/">[Melissa Fernandes]</a></div>
-                <div id="mobmenu"><a href="javascript:void(0)" onclick="mobilemenu()" role="button"><i class="bi bi-list" onclick="openClose(this)"></i></a></div>
-                <div id="topnav">
-                    <ul id="moblinks">
-                        <li class="green">Portfolio</li>
-                        <li><a href="https://mellunar.github.io/biografia">Biografia</a></li>
-                    </ul>
-                </div>
-                <button id="daynight" onclick="dayNight(); toggleDark()"><i class="bi bi-moon-fill"></i></button>
-            </div>        
-        </nav>
+        <top-bar></top-bar>
     </header>
     <section id="portfolio">
         <div><h2>Portfolio</h2></div>
@@ -53,15 +41,6 @@
             </ul>
         </div>
     </section>
-    <footer id="footer">
-        <div id="ifooter">
-            <div id="mel"><span id="flogo">[Melissa Fernandes]</span></div>
-            <nav id="footer-links">
-                <a href="mailto:melissafernandes93@yahoo.com.br"><i class="bi bi-at"></i></a>
-                <a href="https://github.com/mellunar"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/melissa-fernandes-610033163/"><i class="bi bi-linkedin"></i></a>
-            </nav>
-        </div>
-    </footer>
+    <pg-footer></pg-footer>
 </body>
 </html>
