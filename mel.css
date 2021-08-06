@@ -344,37 +344,6 @@ footer a:hover {
     grid-gap: 20px;
 }
 
-.portsec {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-    grid-gap: 15px;
-    justify-content: center;
-}
-
-.portsec li {
-    height: 400px;
-    border-radius: 7px;
-    border: 1px solid #dee2e6;
-}
-.portsec li:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);    
-    border: 3px solid #2ea675;
-}
-
-.plico {
-    font-size: 25px;    
-    letter-spacing: 10px;
-    margin-bottom: 0.5rem;
-}
-
-#minis {    
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 20px;
-}
-
 @media screen and (max-width: 1023px) {
     #welcome {
         padding-bottom: 47%;
