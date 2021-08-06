@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       libio.innerHTML = "Biografia";
       libio.classList.toggle("green")
     }
-    if (cpg == "portfolio") {
+    if (cpg == "mellunar.github.io/portfolio") {
       let liptf = document.getElementById("li-ptf")
       liptf.innerHTML = "Portfolio";
       liptf.classList.toggle("green")
