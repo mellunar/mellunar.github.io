@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("header").classList.toggle("darkheader");
       document.getElementsByClassName("tbbg")[0].classList.toggle("darktbbg");
       document.getElementById("footer").classList.toggle("darkfooter");
-      let welcome = document.getElementById("welcome")
+      const welcome = document.getElementById("welcome")
       welcome != null ? welcome.classList.toggle("darkwelcome") : void(0);
+      const portfolio = document.getElementById("portfolio");
+      portfolio != null ? portfolio.classList.toggle("darkportsec") : void(0);
     }
 
     //nav selected
