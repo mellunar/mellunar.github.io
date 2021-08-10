@@ -35,7 +35,7 @@
 }
 
 .txthvr {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -51,7 +51,7 @@
 }
 
 #contolandia {
-    background: url(https://live.staticflickr.com/65535/51366072199_575146a173_b.jpg);
+    background: url(https://live.staticflickr.com/65535/51366072199_dd6dcfca85_o.png);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
