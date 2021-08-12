@@ -3,6 +3,7 @@
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     grid-gap: 20px;
+    padding-bottom: 30px;
 }
 
 .portsec {
@@ -20,8 +21,7 @@
     overflow: hidden;
 }
 .portsec li:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);    
-    border: 3px solid #2ea675;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
 }
 
 .darkportsec li {
@@ -46,12 +46,14 @@
     padding-top: 1.1rem;
 }
 
-#modsites li:hover {
-    border: none;
-}
-
 #contolandia {
     background: url(https://live.staticflickr.com/65535/51366072199_dd6dcfca85_o.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+#blogr {
+    background: url(https://live.staticflickr.com/65535/51371784727_7b1f71ed67_o.jpg);
     background-size: cover;
     background-position: top center;
 }
