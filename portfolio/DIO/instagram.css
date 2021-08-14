@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --tblack: #262626;
+    --link: #0095f6;
+    --lfb: #385185;
+    --tft: #8e8e8e;
+    --border: #dbdbdb;
+}
+
+body {
+    height: 100%;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section {
+    display: inline-flex;
+    max-width: 935px;
+    height: 618px;
+    margin: auto;
+}
+
+#phone {
+    height: 100%;
+}
+
+#loginbox {
+    width: 350px;
+    border: 1px solid var(--border);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+#loginbox a {
+    color: var(--lfb);
+}
+
+#loginbox p {
+    margin: 10px 0 20px 0;
+    font-size: 12px;
+}
+
+#ilogo {
+    margin: 40px 0 30px 0;
+}
+
+#ilogo img{
+    height: 50px;
+}
+
+form {
+    width: 250px;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+::placeholder {
+    font-size: 13px;
+    color: var(--tblack);
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid var(--border);
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type=button] {
+    background-color: var(--link);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#ou {
+    display: flex;
+    margin: 10px 0 20px 0;
+    align-items: center;
+}
+
+#out {
+    color: var(--tft);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.traco {
+    width: 100px;
+    height: 1px;
+    background-color: var(--tft);
+}
+
+#cadasbox {
+    width: 350px;
+    border: 1px solid var(--border);
+    background-color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--tblack);
+    text-align: center;
+    padding: 25px;
+}
+
+#cadasbox a {
+    color: var(--link);
+}
+
+#app {
+    width: 350px;
+    text-align: center;
+    color: var(--tblack);
+    margin-top: 25px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#apps {
+    margin-top: 25px;
+}
+
+#apps img {
+    height: 43px;
+    width: auto;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+}
+
+#footer {
+    max-width: 935px;
+    margin: auto;
+    font-size: 13px;
+    color: var(--tft);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--tft);
+}
+
+footer ul {
+    list-style: none;
+    display: inline-flex;
+    margin: auto;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+
+#ful {
+    margin-top: 25px;
+}
+
+footer li {
+    padding: 5px;
+}
+
+#lul {
+    margin-top: 10px;
+}
+
+@media (max-width: 805px) {
+    section {
+        height: 570px;
+    }
+    #pbx {
+        display: none;
+    }
+}
