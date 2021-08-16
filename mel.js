@@ -27,15 +27,13 @@ customElements.define('top-bar', class Topbar extends HTMLElement {
         this.innerHTML = `
         <nav id="topbar">
             <div id="tbc">
-                <button id="mobmenu" onclick="touchMenu(this)" data-mbmenu="mbhamb" hidden>${mbhamb}</button>
+                <button id="mobmenu" hidden>${mbhamb}</button>
                 <div id="logo"><a href="https://mellunar.github.io/">[Melissa Fernandes]</a></div>
-                <div id="topnav">
-                    <ul id="moblinks">
+                <ul id="topnav" data-menu="close">
                         <li id="li-ptf"><a href="https://mellunar.github.io/portfolio">Portfolio</a></li>
                         <li id="li-gist"><a href="https://mellunar.github.io/gists">Gists</a></li>
                         <li id="li-bio"><a href="https://mellunar.github.io/biografia">Biografia</a></li>
-                    </ul>
-                </div>            
+                </ul>           
                 <button id="dmswitcher" onclick="darkMode(this)" aria-hidden="true">${dmmoon}</button>
             </div>        
         </nav>
@@ -45,7 +43,8 @@ customElements.define('top-bar', class Topbar extends HTMLElement {
 
 document.addEventListener("DOMContentLoaded", function() {
     const dmswitcher = document.getElementById("dmswitcher");
-    const mobmenu = document.getElementById("topnav");
+    const mobmenu = document.getElementById("mobmenu");
+    const topnav = document.getElementById("topnav");
     const pgptf = document.getElementById("portfolio");
     const pgist = document.getElementById("gists");
     const pgbio = document.getElementById("biografia");
@@ -87,16 +86,14 @@ document.addEventListener("DOMContentLoaded", function() {
         void(0);
     }
     
-    window.touchMenu = function touchMenu(x) {
-        if (x.dataset.mbmenu == "mbhamb") {
-            x.innerHTML = mbx;
-            x.setAttribute("data-mbmenu", "mbx");
-            mobmenu.style.display = "block";
+    mobmenu.onclick = function touchMenu() {
+        if (topnav.dataset.menu == "close") {
+            mobmenu.innerHTML = mbx;
+            topnav.setAttribute("data-menu", "open");
         }
         else {
-            x.innerHTML = mbhamb;
-            x.setAttribute("data-mbmenu", "mbhamb");
-            mobmenu.style.display = "none";
+            mobmenu.innerHTML = mbhamb;
+            topnav.setAttribute("data-menu", "close");
         }
     }
 });
