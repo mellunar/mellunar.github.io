@@ -1,57 +1,14 @@
-.secdiv {    
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 20px;
-    padding-bottom: 30px;
+#portfolio {
+    padding: 120px 10px 60px 10px;
 }
-
-.portsec {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-    grid-gap: 15px;
-    justify-content: center;
+.pt30 {
+    padding-top: 30px;
 }
-
-.portsec li {
-    height: 400px;
-    border-radius: 15px;
-    border: 1px solid #dee2e6;
-    overflow: hidden;
-}
-.portsec li:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-}
-
-.darkportsec li {
-    border-color: #292c36;
-}
-
-.plico {
-    font-size: 25px;    
-    letter-spacing: 10px;
-    margin-bottom: 0.5rem;
-}
-
-.txthvr {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.txthvrln {
-    padding-top: 1.1rem;
-}
-
 #contolandia {
     background: url(https://live.staticflickr.com/65535/51366072199_dd6dcfca85_o.png);
     background-size: cover;
     background-position: top center;
 }
-
 #blogr {
     background: url(https://live.staticflickr.com/65535/51371784727_7b1f71ed67_o.jpg);
     background-size: cover;

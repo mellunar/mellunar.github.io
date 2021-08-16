@@ -1,0 +1,101 @@
+#welcome {
+    padding: 200px 0 150px 0;
+    line-height: 1.6em;
+    background-color: var(--head);
+}
+#welcinner {
+    padding-top: 0 !important;
+    align-items: center;
+}
+#welcinner div:nth-child(2) {
+    margin-left: auto;
+    max-width: 450px;
+}
+#welcinner a:hover, #welcinner a:active {
+    color: var(--txt);
+}
+#std {
+    margin-top: -20px;
+}
+.hicons {
+    margin-top: 1.5em;
+    font-size: 25px;
+    letter-spacing: 0.8rem;
+}
+#biot {
+    width: 100%;
+}
+#biop {
+    width: 25%;
+}
+#biob {
+    width: 75%;
+}
+#profpic {
+    background: url(https://live.staticflickr.com/65535/51349705852_7df4bd604b_o.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+#langs {
+    display: inline-flex;
+    justify-content: center;
+}
+#langs div {
+    width: 100px;
+}
+.lic{
+    font-size: 40px;
+}
+.grad {
+    font-size: 12px;    
+    letter-spacing: 2px;
+}
+#projetos {
+    padding-bottom: 60px;
+}
+#projgrid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projimg {
+    max-width: 450px;
+}
+
+@media screen and (max-width: 1023px) {
+    #welcome {
+        padding: 100px 0 80px 0;
+    }
+    #welcinner {
+        flex-direction: column;
+    }
+    #welcinner article:nth-child(1) {
+        order: 2;
+    }
+    #welcinner div:nth-child(2) {
+        margin-left: 0;
+        max-width: 400px;
+        order: 1;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #welcome {
+        line-height: 18px;
+    }
+    #welcinner article {
+        width: 100%;
+    }
+    #std {
+        margin-top: -10px;
+    }
+    #biop, #biob {
+        width: 100%;
+    }
+}

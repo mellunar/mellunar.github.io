@@ -1,73 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <title>Portfolio - Melissa Fernandes</title>
-    <link rel='stylesheet' href='/mel.css'>
-    <script src="/mel.js"></script>	
-    <link rel='stylesheet' href='portfolio.css'>
-    <link rel='stylesheet' href='sinal.css'>
-    <script src="sinal.js"></script>
-    <link rel="shortcut icon" href="https://live.staticflickr.com/65535/51359213968_93c4580d10_o.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel='stylesheet' href="../mel.css">
+    <script src="../mel.js"></script>
+    <link rel='stylesheet' href="portfolio.css">
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/e8YFKPTjpSD5I6MFhP8zShA9GEHjXwsxXIjaPIpHnirZtbculF83-bBCSevjKEVYaze6AvdP7wGVwa43oVlI66-cqRO1gMmhHC2BgBGVeD_JfeKMdlyomMl5RhepnmA-LDrrgJBByO9r4QRfvC3mTa3raiUZ3yMEnV4G5G-UT8q9jl3oAbBc7vopTEtpFxsGczmD0Yj_-4RXHGwX5dHQdZqM8YvD0N0dMvOfcQPDj8L0dW0ef6NteBzGyXv8DhqD9q6PpTyQ620aLNLeohpIZUsGs5yd3glLUsBWF8Jzt8aYaZQfCIh3aa49Sbi41k34o8IoGrSuhVbYKH-cXjpzwzhiF9QqdQWJ8gfL6qMru55YYZlLr914q4BZnfoCLHdJ1X25gEsvtSSPbj9b7OfdmKluKzCmr13Hnaz1Qhmjl7K5FpAR6ynWV8pS0mNyfZBvKetwnz5ZhhPq9przCzIhBn1XcBMuhICeqCmG8hLTa2pNwQXqt1HDfnP1ckcKHnba5RPQmbCIxoGPxYYxNJgUPCe3dTOqeinND7-7RppNSwRXgvbyUjcH0os8WDyZiBUO8SU57xzvS1BDgGV424SBwIXBq5obhLbGJe_Ma9hzQe23yy1jWVTEs3Z_RVTh7_-z-2TJ5E4Og-pbfHLwYpzS12ovMSofzzCRO1q-_eQXK6fZrAwyZFIF2HPDfoCsjPgRJH4YZQts0wBSdBZR_gQ8j2hi=s32-no?authuser=1" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/89e81c43a3.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header id="header">
-        <top-bar></top-bar>
-    </header>
-    <section id="portfolio">
-        <div><h2>Portfolio</h2></div>
-        <div class="secdiv" id="modsites">
-            <div class="textcenter"><h3>Modelos de sites responsivos</h3><p>Os modelos aqui apresentados são de marcas, personalidades ou produtos fictícios. Em dispositivos móveis foram testados apenas no Android 7 e 11.</p></div>
-            <ul class="portsec">
-                <li class="imghvr" id="contolandia"><a href="https://mellunar.netlify.app/contolandia/" class="linkfill">
-                    <div class="txtbox">
-                        <div class="txthvr">
-                            <h3>Contolandia</h3>
-                            <div class="plico txthvrln"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i></div>
-                            <div class="txthvrln">Contolandia é um modelo que foi desenvolvido pensado nos sites que são como uma rede social de escrita, onde as pessoas publicam seus livros, contos e etc.</div>
+    <top-bar></top-bar>
+    <main>
+        <section id="portfolio" class="flexbox fgridpad flextitle">
+            <div class="flextitle text-center fgridpad"><h2>Portfolio</h2></div>
+            <div class="flextitle text-center fgridpad">
+                <h3>Modelos de sites responsivos</h3>
+                <p>Os modelos aqui apresentados são de marcas, personalidades ou produtos fictícios. Em dispositivos móveis foram testados apenas no Android 7 e 11.</p>
+            </div>
+            <div class="flexbox galeria">
+                <article>
+                    <a class="imghvr" id="contolandia" href="https://mellunar.netlify.app/contolandia/" class="linkfill">
+                        <div class="txtbox">
+                            <div class="txthvr">
+                                <h3>Contolandia</h3>
+                                <div class="plico txthvrln"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i></div>
+                                <div class="txthvrln">Contolandia é um modelo que foi desenvolvido pensado nos sites que são como uma rede social de escrita, onde as pessoas publicam seus livros, contos e etc.</div>
+                            </div>
                         </div>
-                    </div>
-                </a></li>
-            </ul>
-        </div>
-	    <div class="secdiv" id="frontendmentor">
-            <div class="textcenter"><h3>Desafios do Frontend Mentor</h3><p>O <a href="https://www.frontendmentor.io/">Frontend Mentor</a> é um site que publica imagens de modelos de site para que possamos recriar com base apenas na observação.</p></div>
-            <ul class="portsec">
-                <li class="imghvr" id="blogr"><a href="https://mellunar.netlify.app/blogr/" class="linkfill">
-                    <div class="txtbox">
-                        <div class="txthvr">
-                            <h3>Blogr</h3>
-                            <div class="txthvrln">O menu superior da versão portátil será finalizado futuramente.</div>
+                    </a>
+                </article>
+            </div>
+            <div class="pt30 flextitle text-center fgridpad">
+                <h3>Desafios do Frontend Mentor</h3>
+                <p>O <a href="https://www.frontendmentor.io/">Frontend Mentor</a> é um site que publica imagens de modelos de site para que possamos recriar com base apenas na observação.</p>
+            </div>
+            <div class="flexbox galeria">
+                <article>
+                    <a class="imghvr" id="blogr" href="https://mellunar.netlify.app/blogr/" class="linkfill">
+                        <div class="txtbox">
+                            <div class="txthvr">
+                                <h3>Blogr</h3>
+                                <div class="txthvrln">O menu superior da versão portátil será finalizado futuramente.</div>
+                            </div>
                         </div>
-                    </div>
-                </a></li>
-            </ul>
-        </div>
-        <div class="secdiv">
-            <div class="textcenter"><h3>Minis</h3><p>Códigos aleatórios</p></div>
-            <ul class="portsec">
-                <li id="sinal">
-                    <div class="textcenter">
-                        <h3>Sinal de Trânsito</h3>
-                        <div class="plico"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i></div>
-                        <div id="sinalbase">
-                            <div class='scronometro' id="scronometro"></div>
-                            <div class='svermelho' id='svermelho'></div>
-                            <div class='samarelo' id='samarelo'></div>
-                            <div class='sverde' id="sverde"></div>
-                        </div>
-                    </div>                    
-                </li>
-            </ul>
-        </div>
-    </section>
-    <pg-footer></pg-footer>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <pg-footer></pg-footer>
+    </main>
 </body>
 </html>

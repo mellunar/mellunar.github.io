@@ -1,0 +1,74 @@
+#gists {
+    padding: 120px 10px 60px 10px;
+}
+.justcenter {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#gists article div:first-child {
+    border-radius: 10px;
+}
+
+#sinal {
+    background-color: #263238;
+    color: #fff;
+}
+#sinalbase {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    border-radius: 20px;
+    width: 220px;
+    height: 180px;
+    background-color: #1a191e;
+}
+#scronometro {
+    background-color: #111;
+    grid-area: 1/1/4/2;
+    border-radius: 10px;
+    font-size: 100px;
+    display: grid;    
+    align-items: center;
+    justify-items: center;
+}
+#svermelho {
+    background-color: #111;
+    border-radius: 50%;
+}
+#samarelo {
+    background-color: #111;
+    border-radius: 50%;
+}
+#sverde {
+    background-color: #111;
+    border-radius: 50%;
+}
+
+#gradtext {
+    padding: 10px;
+    background-color: #263238;
+    color: #fff;
+}
+#txtgrad {
+	font-weight: 500;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
