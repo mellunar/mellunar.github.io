@@ -76,6 +76,7 @@
     }
     #welcinner article:nth-child(1) {
         order: 2;
+        text-align: center;
     }
     #welcinner div:nth-child(2) {
         margin-left: 0;
