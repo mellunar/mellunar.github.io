@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    if (currentTheme === "dark" || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (currentTheme === "dark" || window.matchMedia('(prefers-color-scheme: dark)').matches && currentTheme !== "light") {
         dmswitcher.innerHTML = dmsun;
         html.setAttribute("data-theme", "dark");
     }
