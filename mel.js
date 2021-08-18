@@ -29,14 +29,15 @@ customElements.define('top-bar', class Topbar extends HTMLElement {
             <div id="tbc">
                 <button id="mobmenu" hidden>${mbhamb}</button>
                 <div id="logo"><a href="https://mellunar.github.io/">[Melissa Fernandes]</a></div>
-                <ul id="topnav" data-menu="close">
+                <ul id="topnav" data-menu="closed">
                         <li id="li-ptf"><a href="https://mellunar.github.io/portfolio">Portfolio</a></li>
                         <li id="li-gist"><a href="https://mellunar.github.io/gists">Gists</a></li>
                         <li id="li-bio"><a href="https://mellunar.github.io/biografia">Biografia</a></li>
                 </ul>           
-                <button id="dmswitcher" onclick="darkMode(this)" aria-hidden="true">${dmmoon}</button>
+                <button id="dmswitcher" aria-hidden="true">${dmmoon}</button>
             </div>        
         </nav>
+        <div id="menuopened" hidden></div>
         `
     }
 });
@@ -52,14 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const ligist = document.getElementById("li-gist")
     const libio = document.getElementById("li-bio")
 
-    window.darkMode = function darkMode(x){
+    dmswitcher.onclick = function (){
         if (html.dataset.theme == "light"){
-            x.innerHTML = dmsun;
+            dmswitcher.innerHTML = dmsun;
             html.setAttribute("data-theme", "dark");
             localStorage.setItem("theme", "dark");
         }
         else {
-            x.innerHTML = dmmoon;
+            dmswitcher.innerHTML = dmmoon;
             html.setAttribute("data-theme", "light");
             localStorage.setItem("theme", "light");
         }
@@ -86,16 +87,24 @@ document.addEventListener("DOMContentLoaded", function() {
         void(0);
     }
     
-    mobmenu.onclick = function touchMenu() {
-        if (topnav.dataset.menu == "close") {
+    function closemenu() {
+        mobmenu.innerHTML = mbhamb;
+        topnav.setAttribute("data-menu", "closed");
+        document.body.style.position = '';
+        menuopened.hidden = true
+    }
+    mobmenu.onclick = function () {
+        if (topnav.dataset.menu == "closed") {
             mobmenu.innerHTML = mbx;
-            topnav.setAttribute("data-menu", "open");
+            topnav.setAttribute("data-menu", "opened");
+            document.body.style.position = 'fixed';
+            menuopened.hidden = false
         }
         else {
-            mobmenu.innerHTML = mbhamb;
-            topnav.setAttribute("data-menu", "close");
+            closemenu()
         }
     }
+    menuopened.onclick = function () {closemenu()};
 });
 
 customElements.define('pg-footer', class Footer extends HTMLElement {
