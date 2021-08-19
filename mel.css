@@ -208,8 +208,9 @@ footer a:hover {
     height: 425px;
     padding: 10px;
     display: flex;
+    position: relative;
 }
-.galeria a {
+.galeria a:not(.linkboxfill), .imghvr {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -217,6 +218,18 @@ footer a:hover {
     height: 100%;
     border-radius: 5px;
     overflow: hidden;
+}
+.linkboxfill, .txtbox, #outbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.linkboxfill {
+    z-index: 20;
 }
 .cardimgw {
     width: 100%;
@@ -238,9 +251,6 @@ footer a:hover {
     background-color: rgba(0,0,0,0.75);    
     line-height: 1.55rem;
 }
-.imghvr:hover .txtbox {
-    opacity: 1;
-}
 .txthvr {
     position: relative;
     top: 50%;
@@ -260,12 +270,34 @@ footer a:hover {
 
 
 
+@media screen and (min-width: 1024px) {
+    .imghvr:hover .txtbox {
+        opacity: 1;
+    }
+    #outbox {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 1023px) {
-    [data-menu="closed"] {
+    [data-menu="closed"]{
         height: 0;
     }
-    [data-menu="opened"] {
+    [data-menu="opened"]{
         height: auto;
+    }
+    [data-hover=false]{
+        opacity: 0;
+    }
+    [data-hover=true]{
+        opacity: 1;
+    }
+    [data-hidden=true]{
+        display: none;
+    }
+    [data-hidden=false]{
+        display: block;
     }
     #tbc {
         justify-content: center;
@@ -318,6 +350,11 @@ footer a:hover {
     }
     .galeria article {
         width: 50%;
+    }
+    #outbox {    
+        z-index: 15;
+        background-color: transparent;
+        position: fixed !important;
     }
 }
 

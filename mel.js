@@ -20,7 +20,6 @@ const mbx = `
 `;
 const html = document.querySelector("html");
 const currentTheme = localStorage.getItem('theme');
-currentTheme == null ? void(0) : void(0);
 
 customElements.define('top-bar', class Topbar extends HTMLElement {
     connectedCallback() {
@@ -49,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const pgptf = document.getElementById("portfolio");
     const pgist = document.getElementById("gists");
     const pgbio = document.getElementById("biografia");
-    const liptf = document.getElementById("li-ptf")
-    const ligist = document.getElementById("li-gist")
-    const libio = document.getElementById("li-bio")
+    const liptf = document.getElementById("li-ptf");
+    const ligist = document.getElementById("li-gist");
+    const libio = document.getElementById("li-bio");
 
     dmswitcher.onclick = function (){
         if (html.dataset.theme == "light"){
@@ -105,6 +104,41 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     menuopened.onclick = function () {closemenu()};
+    window.onresize = function() {if(window.innerWidth > 1023){closemenu()}};
+
+    const imghvr = document.querySelectorAll(".imghvr");
+    const outbox = document.querySelector("#outbox");
+
+    if (window.innerWidth < 1024) {
+        imghvr.forEach((hover, index) => {
+            const txtbox = imghvr[index].querySelector('.txtbox');
+            const linkfill = imghvr[index].querySelector('.linkboxfill');
+
+            function imageHover(att1, att2){
+            txtbox.setAttribute("data-hover", att1);
+            linkfill.setAttribute("data-hidden", att2);
+            outbox.setAttribute("data-hidden", att2);
+            }
+
+            hover.onclick = (event) => {
+            imageHover("true","false");
+            if (txtbox.dataset.hover == "true") {void(0)};
+            };
+
+            function closeHovera(element){
+                element.setAttribute("data-hidden", "true")
+            }
+            function closeHoverb(element){
+                element.setAttribute("data-hover", "false")
+            }
+
+            outbox.onclick = function() {
+                document.querySelectorAll(".txtbox").forEach(closeHoverb);
+                document.querySelectorAll(".linkboxfill").forEach(closeHovera);
+                closeHovera(outbox);
+            }
+            })
+    }
 });
 
 customElements.define('pg-footer', class Footer extends HTMLElement {
