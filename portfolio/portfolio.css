@@ -4,13 +4,17 @@
 .pt30 {
     padding-top: 30px;
 }
+.imghvr {
+    background-size: cover !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+}
 #contolandia {
     background: url(https://live.staticflickr.com/65535/51366072199_dd6dcfca85_o.png);
-    background-size: cover;
-    background-position: top center;
 }
 #blogr {
     background: url(https://live.staticflickr.com/65535/51371784727_7b1f71ed67_o.jpg);
-    background-size: cover;
-    background-position: top center;
+}
+#melunar {
+    background: url(https://live.staticflickr.com/65535/51396611247_3b346913da_o.jpg);
 }
