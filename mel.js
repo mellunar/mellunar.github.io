@@ -89,14 +89,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function closemenu() {
         mobmenu.innerHTML = mbhamb;
         topnav.setAttribute("data-menu", "closed");
-        document.body.style.position = '';
+        document.body.style.overflow = '';
         menuopened.hidden = true
     }
     mobmenu.onclick = function () {
         if (topnav.dataset.menu == "closed") {
             mobmenu.innerHTML = mbx;
             topnav.setAttribute("data-menu", "opened");
-            document.body.style.position = 'fixed';
+            document.body.style.overflow = 'hidden';
             menuopened.hidden = false
         }
         else {
