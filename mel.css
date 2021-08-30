@@ -199,7 +199,12 @@ footer a:hover {
     max-width: 800px;
     padding: 120px 10px 60px 10px;
 }
-
+#portfolio {
+    padding: 120px 10px 60px 10px;
+}
+.pt30 {
+    padding-top: 30px;
+}
 
 
 .galeria {
@@ -343,8 +348,8 @@ footer a:hover {
         background-color: rgba(0,0,0,0.5);
         z-index:990;
     }
-    .galeria article {
-        width: 50%;
+    #portfolio {
+        padding-top: 60px;
     }
     #outbox {    
         z-index: 15;
@@ -362,8 +367,5 @@ footer a:hover {
     }    
     h3 {
         font-size: 19px;
-    }
-    .galeria article {
-        width: 100%;
     }
 }
