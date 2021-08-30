@@ -8,76 +8,44 @@
     <link rel='stylesheet' href="../mel.css">
     <script src="../mel.js"></script>
     <link rel='stylesheet' href="portfolio.css">
+    <script src="../swiper-bundle.js"></script>
+    <script src="portfolio.js"></script>
     <link rel="shortcut icon" href="https://live.staticflickr.com/65535/51380917136_dca18ffbbb_o.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/89e81c43a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <top-bar></top-bar>
     <main>
-        <section id="portfolio" class="flexbox fgridpad flextitle">
+        <section id="portfolio" class="fgridpad flextitle">
             <div class="flextitle text-center fgridpad"><h2>Portfolio</h2></div>
             <div class="flextitle text-center fgridpad">
                 <h3>Modelos de sites responsivos</h3>
                 <p>Os modelos aqui apresentados são de marcas, personalidades ou produtos fictícios. Em dispositivos móveis foram testados apenas no Android 7 e 11.</p>
             </div>
-            <div class="flexbox galeria">
-                <article>
-                    <div class="imghvr" id="foxhub">
-                        <a href="https://mellunar.netlify.app/foxhub/" class="linkboxfill" data-hidden="true"></a>
-                        <div class="txtbox">
-                            <div class="txthvr">
-                                <h3>Fox Hub</h3>
-                                <div class="plico txthvrln"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i></div>
-                                <div class="txthvrln"></div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="imghvr" id="melunar">
-                        <a href="https://mellunar.netlify.app/mellunar/" class="linkboxfill" data-hidden="true"></a>
-                        <div class="txtbox">
-                            <div class="txthvr">
-                                <h3>Melunar</h3>
-                                <div class="plico txthvrln"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i></div>
-                                <div class="txthvrln">Melunar é um modelo criado para ser como uma lojinha esotérica virtual, mantendo uma estética de bruxa moderna.</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="imghvr" id="contolandia">
-                        <a href="https://mellunar.netlify.app/contolandia/" class="linkboxfill" data-hidden="true"></a>
-                        <div class="txtbox">
-                            <div class="txthvr">
-                                <h3>Contolandia</h3>
-                                <div class="plico txthvrln"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i></div>
-                                <div class="txthvrln">Contolandia é um modelo que foi desenvolvido pensado nos sites que são como uma rede social de escrita, onde as pessoas publicam seus livros, contos e etc.</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+            <div id="mainptf" class="galeria">
+                <!--<div class="ctrbtnl carcl pconly"></div>
+                <div class="ctrbtnr carcr pconly"></div>-->
+                <div class="galcont swiper-wrapper">
+                    <!-- -->
+                </div>
             </div>
             <div class="pt30 flextitle text-center fgridpad">
                 <h3>Desafios do Frontend Mentor</h3>
                 <p>O <a href="https://www.frontendmentor.io/">Frontend Mentor</a> é um site que publica imagens de modelos de site para que possamos recriar com base apenas na observação.</p>
             </div>
-            <div class="flexbox galeria">
-                <article>
-                    <div class="imghvr" id="blogr">
-                        <a href="https://mellunar.netlify.app/blogr/" class="linkboxfill" data-hidden="true"></a>
-                        <div class="txtbox">
-                            <div class="txthvr">
-                                <h3>Blogr</h3>
-                                <div class="txthvrln"></div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+            <div id="frenme" class="galeria">
+                <!--<div class="ctrbtnl carcl pconly"></div>
+                <div class="ctrbtnr carcr pconly"></div>-->
+                <div class="galcont swiper-wrapper">
+                    <!-- -->
+                </div>
             </div>
         </section>
+        <section>
+
+        </section>
         <div id="outbox" data-hidden="true"></div>
-        <pg-footer></pg-footer>
     </main>
+    <pg-footer></pg-footer>
 </body>
 </html>
