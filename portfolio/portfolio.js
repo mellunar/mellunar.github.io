@@ -55,73 +55,43 @@ document.addEventListener("DOMContentLoaded", function() {
     mainportfolio.forEach((e,i)=>{createItem(0,mainportfolio,i)});
     frenme.forEach((e,i)=>{createItem(1,frenme,i)});
 
-    new Swiper("#mainptf", {
-        centerInsufficientSlides: true,
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 14,
-        /*navigation: {
-            nextEl: ".ctrbtnr",
-            prevEl: ".ctrbtnl",
-            disabledClass: "hidden"
-        },*/
-        breakpoints: {
-            600: {
-                spaceBetween: 20,
-                slidesPerView: 3,
-                slidesPerGroup: 3
+    function createSwiperGal(container){
+        new Swiper(container, {
+            centerInsufficientSlides: true,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 14,
+            navigation: {
+                nextEl: ".ctrbtnr",
+                prevEl: ".ctrbtnl",
+                disabledClass: "hidden"
             },
-            1280: {
-                slidesPerView: 4,
-                slidesPerGroup: 4
+            breakpoints: {
+                600: {
+                    spaceBetween: 20,
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+                1280: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                },
+                /*1600: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                }*/
             },
-            1600: {
-                slidesPerView: 5,
-                slidesPerGroup: 5
+            pagination: {
+                el: ".pagination",
+                type: "bullets",
+                bulletClass: "pagdot",
+                bulletActiveClass: "pdatv",
+                clickable: true,
+                hideOnClick: false
             }
-        }/*
-        pagination: {
-            el: ".pagination",
-            type: "bullets",
-            bulletClass: "barra",
-            bulletActiveClass: "batv",
-            clickable: true,
-            hideOnClick: false
-        }*/
-    });
+        });
+    };
 
-    new Swiper("#frenme", {
-        centerInsufficientSlides: true,
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 14,
-        /*navigation: {
-            nextEl: ".ctrbtnr",
-            prevEl: ".ctrbtnl",
-            disabledClass: "hidden"
-        },*/
-        breakpoints: {
-            600: {
-                spaceBetween: 20,
-                slidesPerView: 3,
-                slidesPerGroup: 3
-            },
-            1280: {
-                slidesPerView: 4,
-                slidesPerGroup: 4
-            },
-            1600: {
-                slidesPerView: 5,
-                slidesPerGroup: 5
-            }
-        }/*
-        pagination: {
-            el: ".pagination",
-            type: "bullets",
-            bulletClass: "barra",
-            bulletActiveClass: "batv",
-            clickable: true,
-            hideOnClick: false
-        }*/
-    });
+    createSwiperGal("#mainptf");
+    createSwiperGal("#frenme");
 });
